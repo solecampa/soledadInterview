@@ -35,7 +35,7 @@ test.beforeEach(async ({ page }) => {
       await expect(productDetails.productName).toHaveText(products[0])
       
     });
-    await test.step('Get productInnformatioin', async () => {
+    await test.step('Get productInnformation', async () => {
       productPrice = await productDetails.priceContainer.innerText()
       priceWithoutTaxes = productPrice.replace(/\s+\*\s*includes tax/, '').replace(/^\$\s*/, '')
       productName = await productDetails.productName.innerText()
@@ -56,7 +56,6 @@ test.beforeEach(async ({ page }) => {
     }); 
 
     await test.step('Go to cart',async()=>{
-      await page.pause()
       await home.cartNavButton.click()
       await page.waitForLoadState('networkidle')
       const table =   await cart.formatTableResults()
@@ -67,10 +66,11 @@ test.beforeEach(async ({ page }) => {
 
     await test.step('Place Order',async()=>{
       await cart.placeOrder.click()
+      
     })
 
     await test.step('Complete order form',async()=>{
-
+      await page.waitForSelector('#name')
       await orderModal.fillModalInfo(userInfo)
 
     })

@@ -13,7 +13,7 @@ export class ProductDetails{
         this.productName = page.locator('.name')
         this.priceContainer = page.locator('.price-container')
         this.productDescription = page.locator('#more-information p')
-        this.addToCartButton = page.getByRole('button', { name: 'Add to cart' })
+        this.addToCartButton =  page.locator('.col-sm-12.col-md-6.col-lg-6 a.btn.btn-success.btn-lg');
     }
 
 
