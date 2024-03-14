@@ -4,7 +4,7 @@ import { ProductDetails } from "../Pages/PageSections/productDetails";
 import { Cart } from "../Pages/cart";
 import { OrderModal } from "../Pages/PageSections/orderModal";
 import { userInfo } from "../Data/user";
-import {PurchaseConfirmationModal} from "../Pages/PageSections/PurchaseConfirmationModal"
+import {PurchaseConfirmationModal} from "../Pages/PageSections/purchaseConfirmationModal"
 
 let productPrice;
 let productName
