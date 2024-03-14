@@ -7,7 +7,7 @@ export const smokeDemoBlaze = [
         testDir:'tests/Smoke',
         retries: 0
     },
-/*     {
+    {
         name: 'smokeOnFirefox',
         use: { ...devices['Desktop Chrome'] },
         testDir:'tests/Smoke',
@@ -24,6 +24,6 @@ export const smokeDemoBlaze = [
         testDir:'tests/Smoke',
         use: { ...devices['Pixel 5'] },
         retries:0
-    }, */
+    },
 
 ]

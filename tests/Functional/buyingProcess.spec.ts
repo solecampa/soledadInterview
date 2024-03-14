@@ -86,10 +86,9 @@ test.beforeEach(async ({ page }) => {
       await page.waitForLoadState('networkidle')
       await expect(purchaseConfirmationModal.successfullMessage).toBeVisible()
       const receiptInfo = await purchaseConfirmationModal.getPurchaseInfo()
-      console.log(receiptInfo)
-       expect(receiptInfo).toContain(userInfo.name)
-       expect(receiptInfo).toContain(userInfo.card)
-       expect(receiptInfo).toContain(today.toString()) //date in demoblaze is displaying as if it was past month, today is 14/03/2024 it displays 14/02/2024
+      expect(receiptInfo).toContain(userInfo.name)
+      expect(receiptInfo).toContain(userInfo.card)
+      expect(receiptInfo).toContain(today.toString()) //date in demoblaze is displaying as if it was past month, today is 14/03/2024 it displays 14/02/2024
 
 
 

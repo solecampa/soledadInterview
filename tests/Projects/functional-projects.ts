@@ -7,7 +7,7 @@ export const functionalDemoBlaze = [
         testDir:'tests/Functional',
         retries: 0
     },
-/*     {
+    {
         name: 'functionalOnFirefox',
         use: { ...devices['Desktop Firefox'] },
         testDir:'tests/Functional',
@@ -24,5 +24,5 @@ export const functionalDemoBlaze = [
         testDir:'tests/Functional',
         use: { ...devices['Pixel 5'] },
         retries: 0
-    }, */
+    },
 ]
