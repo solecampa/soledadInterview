@@ -2,7 +2,7 @@ import test, { expect } from "@playwright/test";
 import { Home } from "../Pages/home";
 import { ProductDetails } from "../Pages/PageSections/productDetails";
 import { Cart } from "../Pages/cart";
-import { OrderModal } from "../Pages/PageSections/OrderModal";
+import { OrderModal } from "../Pages/PageSections/orderModal";
 import { userInfo } from "../Data/user";
 import {PurchaseConfirmationModal} from "../Pages/PageSections/PurchaseConfirmationModal"
 
